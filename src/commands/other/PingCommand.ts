@@ -1,4 +1,4 @@
-import {Command, Argument} from "discord-akairo";
+import {Command} from "discord-akairo";
 import {Message} from 'discord.js'
 
 export default class PingCommand extends Command {
@@ -9,7 +9,7 @@ export default class PingCommand extends Command {
         });
     }
 
-    public async exec(message: Message, args:Array<Argument> ): Promise<void> {
+    public async exec(message: Message, args:Array<String> ): Promise<void> {
 
         await message.channel.send({
             embed: {
